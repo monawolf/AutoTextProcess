@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>自动化处理文本</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"
+	media="screen" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/autoTextProcess.js"></script>
+</head>
+<body>
+	<div class="centerDiv topDiv">
+		<textarea rows="20" wrap="hard" class="centerTextArea" id="inputText"
+			placeholder="请输入待筛选的文本"></textarea>
+		<br />
+		<div class="centerKeyDiv">
+			<div class="inlineDiv">筛选开始字符</div>
+			<input type="text" id="beginSign">
+			<div class="inlineDiv">筛选结束字符</div>
+			<input type="text" id="endSign">
+		</div>
+		<input type="button" value="筛选" class="centerButton" onclick="autoTextProcess()">
+		<div class="resultDiv" id="resultDiv">
+			<div class="resultTitle">筛选结果</div>
+		</div>
+	</div>
+</body>
+</html>
